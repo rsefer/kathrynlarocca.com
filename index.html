@@ -41,7 +41,8 @@
 	}
 
 	p {
-		line-height: 1.4;
+		font-size: 1.125rem;
+		line-height: 1.5;
 	}
 
 	p a {
@@ -54,20 +55,21 @@
 	}
 
 	header {
-		padding: 3.75rem 0px;
+		padding: 2.75rem 0px;
 		text-align: center;
 		line-height: 1;
 	}
 
 	header h1 {
 		margin: 0px;
-		font-size: 2.75rem;
+		font-size: 2.125rem;
+		line-height: 1.2;
 		font-weight: 600;
 	}
 
 	header .subtitle {
 		margin-top: 1rem;
-		font-size: 1.5rem;
+		font-size: 1.125rem;
 		text-transform: uppercase;
 	}
 
@@ -87,13 +89,16 @@
 		object-fit: cover;
 	}
 
-	.hero svg {
+	.hero a {
+		display: block;
 		z-index: 2;
 		position: absolute;
 		bottom: 0.5rem;
 		left: 50%;
 		transform: translate(-50%, 0px);
-		display: block;
+	}
+
+	.hero a svg {
 		font-size: 3rem;
 		width: 1em;
 		height: 1em;
@@ -203,6 +208,18 @@
 			width:  944px;
 		}
 
+		header {
+			padding: 3.75rem 0px;
+		}
+
+		header h1 {
+			font-size: 2.75rem;
+		}
+
+		header .subtitle {
+			font-size: 1.5rem;
+		}
+
 		.hero {
 			height: 50rem;
 		}
@@ -240,8 +257,8 @@
 			flex-basis: calc((100% - 0.5rem) / 2);
 		}
 
-		.images .image-wrap:first-child {
-			margin-top: 0.5rem;
+		.images .image-wrap:nth-child(2) {
+			margin-top: 0px;
 		}
 
 		.images .image-wrap.wide {
@@ -263,10 +280,10 @@
 
 <section class="hero">
 	<img data-src="./images/placeholder1.jpg">
-	<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
+	<a href="#what-i-do" class="smooth"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></a>
 </section>
 
-<section class="what-i-do">
+<section id="what-i-do" class="what-i-do">
 	<div class="wrapper">
 		<div class="what-i-do-image-wrap">
 			<img data-src="./images/kathryn-sitting.jpg">
@@ -294,10 +311,14 @@
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@15.1.1/dist/lazyload.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
 <script>
 	(function() {
 		var ll = new LazyLoad({
 			threshold: 400
+		});
+		var scroll = new SmoothScroll('a.smooth', {
+			speed: 400
 		});
 	})();
 </script>
