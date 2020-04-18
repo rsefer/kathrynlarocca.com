@@ -22,6 +22,24 @@
 		margin: 0px 1.5rem;
 	}
 
+	img {
+		opacity: 0;
+	}
+
+	img:not(.initial) {
+		transition: opacity 1s;
+	}
+
+	img.initial,
+	img.loaded,
+	img.error {
+		opacity: 1;
+	}
+
+	img:not([src]) {
+		visibility: hidden;
+	}
+
 	p {
 		line-height: 1.4;
 	}
@@ -97,7 +115,9 @@
 	.what-i-do-image-wrap {
 		flex-basis: 100%;
 		position: relative;
+		margin: 0px auto;
 		width: 100%;
+		max-width: 20rem;
 	}
 
 	.what-i-do-image-wrap:after {
@@ -183,8 +203,17 @@
 			width:  944px;
 		}
 
+		.hero {
+			height: 50rem;
+		}
+
+		.what-i-do {
+			margin: 3rem 0px;
+		}
+
 		.what-i-do-image-wrap {
 			flex-basis: 40%;
+			max-width: none;
 		}
 
 		.what-i-do-content {
@@ -233,14 +262,14 @@
 </header>
 
 <section class="hero">
-	<img src="./images/placeholder1.jpg">
+	<img data-src="./images/placeholder1.jpg">
 	<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
 </section>
 
 <section class="what-i-do">
 	<div class="wrapper">
 		<div class="what-i-do-image-wrap">
-			<img src="./images/kathryn-sitting.jpg">
+			<img data-src="./images/kathryn-sitting.jpg">
 		</div>
 		<div class="what-i-do-content">
 			<h2>What I Do</h2>
@@ -259,10 +288,19 @@
 </section>
 
 <section class="images">
-	<div class="image-wrap"><img src="./images/placeholder2.jpg"></div>
-	<div class="image-wrap"><img src="./images/placeholder3.jpg"></div>
-	<div class="image-wrap wide"><img src="./images/placeholder4.jpg"></div>
+	<div class="image-wrap"><img data-src="./images/placeholder2.jpg"></div>
+	<div class="image-wrap"><img data-src="./images/placeholder3.jpg"></div>
+	<div class="image-wrap wide"><img data-src="./images/placeholder4.jpg"></div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@15.1.1/dist/lazyload.min.js"></script>
+<script>
+	(function() {
+		var ll = new LazyLoad({
+			threshold: 400
+		});
+	})();
+</script>
 
 </body>
 </html>
