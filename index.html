@@ -2,180 +2,221 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Kathryn Larocca - Chicago-based Marketing Manager</title>
+	<title>Kathryn Larocca Interiors - Chicago-based Interior Decorator</title>
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0" />
-	<meta name="description" content="Kathryn Larocca - Chicago-based Marketing Manager" />
-	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<meta name="description" content="Kathryn Larocca Interiors - Chicago-based Interior Decorator" />
+	<link rel="stylesheet" href="https://use.typekit.net/ids7fmw.css">
 	<style>
 
 	/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 
 	body {
-		font-family: 'PT Serif', serif;
+		font-family: 'bookmania', serif;
 		font-size: 16px;
+		font-weight: 300;
 		color: #313131;
 		background: #fff;
 	}
 
-	main {
-		box-sizing: border-box;
-		padding: 1rem 1rem 6rem;
+	.wrapper {
+		margin: 0px 1.5rem;
 	}
 
-	img {
-		width: 100%;
-		height: auto;
+	p {
+		line-height: 1.4;
 	}
 
-	.image-wrap,
-	article {
-		display: block;
-		margin: 0px auto;
-		width: 100%;
-		max-width: 500px;
-	}
-
-	a,
-	a:visited {
+	p a {
 		color: #313131;
-		transition: color 250ms;
+		font-weight: 600;
 	}
 
-	a:hover {
-		color: #666;
+	h2 {
+		font-size: 1.75rem;
 	}
 
-	p {
-		margin: 1em 0px;
-		line-height: 1.5;
+	header {
+		padding: 3.75rem 0px;
+		text-align: center;
+		line-height: 1;
 	}
 
-	h1, h2 {
+	header h1 {
 		margin: 0px;
+		font-size: 2.75rem;
+		font-weight: 600;
 	}
 
-	article {
+	header .subtitle {
 		margin-top: 1rem;
-		font-size: 1rem;
-	}
-
-	h1, h2 {
-		font-size: 1.75em;
-	}
-
-	p {
-		font-size: 1.1875em;
-	}
-
-	.social-list {
-		font-size: 0.75em;
-	}
-
-	.social-list {
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
+		font-size: 1.5rem;
 		text-transform: uppercase;
+	}
+
+	.hero {
+		position: relative;
+		height: 31.25rem;
+	}
+
+	.hero img {
+		z-index: 1;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.hero svg {
+		z-index: 2;
+		position: absolute;
+		bottom: 0.5rem;
+		left: 50%;
+		transform: translate(-50%, 0px);
+		display: block;
+		font-size: 3rem;
+		width: 1em;
+		height: 1em;
+		color: #fff;
+		filter: drop-shadow(0px 0.125em 0.5em rgba(0,0,0,0.7));
+	}
+
+	.what-i-do {
+		padding: 3rem 0px;
+	}
+
+	.what-i-do .wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.what-i-do-image-wrap {
+		flex-basis: 100%;
+		position: relative;
+		width: 100%;
+	}
+
+	.what-i-do-image-wrap:after {
+		content: '';
+		display: block;
+		padding-bottom: 100%;
+	}
+
+	.what-i-do-image-wrap img {
+		z-index: 1;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.what-i-do-content {
+		flex-basis: 100%;
+
+	}
+
+	.what-i-do-content h2 {
+		margin: 2rem 0px 0px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.what-i-do-content .pricing {
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.contact {
+		padding: 3rem 0px;
+		background: #f4f4f4;
 		text-align: center;
 	}
 
-	.social-list li {
-		display: inline-block;
-		vertical-align: middle;
-		margin: 0px;
+	.contact p {
+		font-size: 1.5rem;
 	}
 
-	.social-list li + li {
-		margin-left: 1.5em;
+	.images .image-wrap {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
 	}
 
-	.social-list a {
-		text-decoration: none;
+	.images .image-wrap:not(:first-child) {
+		margin-top: 0.5rem;
 	}
 
-	@media all and (min-width: 540px) {
-
-		h1, h2 {
-			font-size: 2em;
-		}
-
+	.images .image-wrap:after {
+		content: '';
+		display: block;
+		padding-bottom: 133.33%;
 	}
 
-	@media all and (min-width: 1024px) {
+	.images .image-wrap.wide:after {
+		content: '';
+		display: block;
+		padding-bottom: 56.25%;
+	}
 
-		main {
-			display: -webkit-box;
-			display: -webkit-flex;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			-webkit-justify-content: space-between;
-			-ms-flex-pack: justify;
-			justify-content: space-between;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			align-items: center;
+	.images .image-wrap img {
+		z-index: 1;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	@media (min-width: 992px) {
+
+		.wrapper {
 			margin: 0px auto;
-			padding: 1rem;
-			width: 960px;
+			width:  944px;
 		}
 
-		.image-wrap,
-		article {
+		.what-i-do-image-wrap {
+			flex-basis: 40%;
+		}
+
+		.what-i-do-content {
+			flex: 1;
+			margin-left: 3rem;
+		}
+
+		.what-i-do-content h2 {
 			margin: 0px;
-			width: auto;
-			max-width: none;
 		}
 
-		.image-wrap {
-			flex-basis: 35%;
+		.contact .wrapper {
+			max-width: 50rem;
 		}
 
-		article {
-			margin-top: 0px;
-			flex-basis: 55%;
-			font-size: 1.25rem;
+		.images {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: stretch;
 		}
 
-		h1, h2 {
-			line-height: 1;
+		.images .image-wrap {
+			flex-basis: calc((100% - 0.5rem) / 2);
 		}
 
-		p {
-			margin: 1.125em 0px;
+		.images .image-wrap:first-child {
+			margin-top: 0.5rem;
 		}
 
-		.social-list {
-			font-size: 0.875em;
-			text-align: left;
-		}
-
-	}
-
-	@media all and (min-width: 1024px) and (min-height: 500px) {
-
-		body {
-			position: relative;
-			height: 100vh;
-		}
-
-		main {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			-webkit-transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-		}
-
-	}
-
-	@media all and (min-width: 1200px) {
-
-		main {
-			width: 1100px;
+		.images .image-wrap.wide {
+			flex-basis: 100%;
 		}
 
 	}
@@ -184,21 +225,44 @@
 </head>
 <body>
 
-<main itemscope itemtype="http://schema.org/Person">
-	<div class="image-wrap"><img itemprop="image" src="./images/kathryn-sitting.jpg" width="200" alt=""></div>
-	<article>
-		<h1>Hi, I'm <span itemprop="name">Kathryn Larocca</span>.</h1>
-		<p>I'm a Chicago-based <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/kathryn-larocca-6581a660/"><span itemprop="jobTitle">marketing manager</span></a> with a passion for interiors. I live in a vintage, one-bedroom apartment in the Gold Coast neighborhood. I am always rearranging and decorating my space. It never ends!</p>
-		<p>My apartment has been featured in publications like <a href="https://theeverygirl.com/kathryn-larocca-home-tour/" target="_blank" title="The Everygirl">The Everygirl</a> and can be rented out for photo shoots and other creative projects via <a href="https://www.homestudiolist.com/listing/900110" target="_blank" title="Home Studio">Home Studio</a> or by contacting me directly. If you have any questions, please feel free to reach out!</p>
-		<ul class="social-list">
-			<li><a rel="nofollow" target="_blank" href="https://www.instagram.com/kathrynlarocca/" title="Instagram">Instagram</a></li>
-			<li><a rel="nofollow" target="_blank" href="https://www.pinterest.com/kathrynlarocca/" title="Pinterest">Pinterest</a></li>
-			<li><a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/kathryn-larocca-6581a660/" title="LinkedIn">LinkedIn</a></li>
-			<li><a rel="nofollow" target="_blank" href="mailto:kathryn.larocca@gmail.com" title="Email" target="_blank">Email</a></li>
-		</ul>
-		<meta itemprop="email" content="kathryn.larocca@gmail.com" />
-	</article>
-</main>
+<header>
+	<div class="wrapper">
+		<h1>Kathryn Larocca Interiors</h1>
+		<div class="subtitle">Classic, Clean, Home</div>
+	</div>
+</header>
+
+<section class="hero">
+	<img src="./images/placeholder1.jpg">
+	<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
+</section>
+
+<section class="what-i-do">
+	<div class="wrapper">
+		<div class="what-i-do-image-wrap">
+			<img src="./images/kathryn-sitting.jpg">
+		</div>
+		<div class="what-i-do-content">
+			<h2>What I Do</h2>
+			<p>Officia deserunt nostrud commodo in adipisicing laborum mollit in laborum reprehenderit sint consequat eu. <a href="#">Mollit fugiat enim cillum aliqua commodo qui amet proident</a> laboris quis excepteur ullamco incididunt cupidatat. Occaecat nisi amet cupidatat ullamco pariatur Lorem sint id nisi non cillum dolor. Eu incididunt labore aliqua ea deserunt. Velit tempor enim culpa exercitation ex dolore incididunt.</p>
+			<p>Officia deserunt nostrud commodo in adipisicing laborum mollit in laborum reprehenderit sint consequat eu. Mollit fugiat enim cillum aliqua commodo qui amet proident laboris quis excepteur ullamco incididunt cupidatat.</p>
+			<p class="pricing">Services start at $150</p>
+		</div>
+	</div>
+</section>
+
+<section class="contact">
+	<div class="wrapper">
+		<h2>Contact</h2>
+		<p>Excepteur elit consectetur culpa Lorem minim. Qui veniam <a href="#">officia officia ipsum</a> minim incididunt. <a href="#">Nisi consectetur</a> fugiat qui voluptate adipisicing ea cupidatat.</p>
+	</div>
+</section>
+
+<section class="images">
+	<div class="image-wrap"><img src="./images/placeholder2.jpg"></div>
+	<div class="image-wrap"><img src="./images/placeholder3.jpg"></div>
+	<div class="image-wrap wide"><img src="./images/placeholder4.jpg"></div>
+</section>
 
 </body>
 </html>
