@@ -18,6 +18,20 @@
 		background: #fff;
 	}
 
+	@keyframes headerFadeInUp {
+
+		0% {
+			opacity: 0;
+			transform: translate(0px, 20%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translate(0px, 0px);
+		}
+
+	}
+
 	@keyframes heroFadeInUp {
 
 		0% {
@@ -307,6 +321,12 @@
 
 		header {
 			padding: 3.75rem 0px;
+			opacity: 0;
+			transform: translate(0px, 20%);
+			animation-name: headerFadeInUp;
+			animation-duration: 1000ms;
+			animation-fill-mode: forwards;
+			will-change: opacity, transform;
 		}
 
 		header h1 {
@@ -324,7 +344,8 @@
 			opacity: 0;
 			transform: translate(0px, 10%);
 			animation-name: heroFadeInUp;
-			animation-duration: 500ms;
+			animation-delay: 250ms;
+			animation-duration: 1000ms;
 			animation-fill-mode: forwards;
 			will-change: opacity, transform;
 		}
@@ -333,7 +354,7 @@
 			transform: translate(-50%, 20px);
 			opacity: 0;
 			animation-name: heroActionsFadeInUp;
-			animation-delay: 1500ms;
+			animation-delay: 2000ms;
 			animation-duration: 500ms;
 			animation-fill-mode: forwards;
 			will-change: opacity, transform;
@@ -354,7 +375,7 @@
 
 		.what-i-do-content {
 			flex: 1;
-			margin-left: 3rem;
+			margin-left: 6rem;
 		}
 
 		.what-i-do-content h2 {
@@ -386,6 +407,14 @@
 
 		.images .image-wrap.wide {
 			flex-basis: 100%;
+		}
+
+	}
+
+	@media (min-width: 1200px) {
+
+		.wrapper {
+			width: 1152px;
 		}
 
 	}
